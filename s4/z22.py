@@ -19,7 +19,7 @@ print('Введите зачения второго множества чере�
 b = [x for x in input().split(' ')]
 b1 = set(b)
 
-result = sorted(a1.union(b1))
+result = sorted(a1 & b1)
 
 print('Итог: ')
 print (*result)
