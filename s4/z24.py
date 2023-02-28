@@ -14,11 +14,11 @@
 N = int(input('Введите количество кустов: '))
 
 print('Введите количество ягод на кустах через пробел: ')
-ai = [int(x) for x in input().split(' ')]
+ai = [int(i) for i in input().split(' ')]
 
 sum = [0]*N
 
-for i in range(N-1):
+for i in range (N):
     sum[i-1] = ai[i-3] + ai[i-2] + ai[i-1]
 
 print(f'Максимальное число ягод за один заход: {max(sum)}')

@@ -7,16 +7,16 @@
 множеств.
 """
 print('Введите зачения количества элеметов множеств через пробел: ')
-leng = [x for x in input().split(' ')]
+leng = [i for i in input().split(' ')]
 n = leng[0]
 m = leng[1]
 
 print('Введите зачения первого множества через пробел: ')
-a = [x for x in input().split(' ')]
+a = [i for i in input().split(' ')]
 a1 = set(a)
 
 print('Введите зачения второго множества через пробел: ')
-b = [x for x in input().split(' ')]
+b = [i for i in input().split(' ')]
 b1 = set(b)
 
 result = sorted(a1 & b1)
